@@ -9,7 +9,7 @@ import (
 // 关于 errgroup的第一个demo，将一个大的任务，分为三个小任务。
 func errgroup1() {
 	// 声明一个 errgroup
-	errSlice := make([]error ,3)
+	errSlice := make([]error, 3)
 	eg := new(errgroup.Group)
 	// 任务1
 	eg.Go(func() error {
